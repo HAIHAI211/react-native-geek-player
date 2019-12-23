@@ -9,7 +9,6 @@
 #import "RNPlayer.h"
 #import "VideoPlayerViewController.h"
 #import <SuperPlayer/SuperPlayer.h>
-#import "AppDelegate.h"
 
 @interface VideoPlayer() <VideoPlayerVCDelegate>
 
