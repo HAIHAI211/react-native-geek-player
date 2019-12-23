@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
 
   s.dependency "React"
-  #s.dependency "SuperPlayer"
+  s.dependency "SuperPlayer"
 
 end
 
