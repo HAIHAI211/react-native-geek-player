@@ -1,4 +1,4 @@
-package com.tencent.liteav.demo.play.rn;
+package com.tencent.liteav.demo.play;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
@@ -11,15 +11,19 @@ import java.util.List;
 
 import javax.annotation.Nonnull;
 
-public class TextViewPackage implements ReactPackage {
+public class SuperPlayerPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-        return Collections.emptyList();
+        return Arrays.asList(new NativeModule[]{
+                // Modules from third-party
+                new SuperPlayerModule(reactContext),
+        });
     }
 
     @Nonnull
     @Override
     public List<ViewManager> createViewManagers(@Nonnull ReactApplicationContext reactContext) {
-        return Arrays.<ViewManager>asList(new TextViewManager());
+        //return Arrays.<ViewManager>asList(new TextViewManager());
+        return Collections.emptyList();
     }
 }

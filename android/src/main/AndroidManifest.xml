@@ -4,7 +4,7 @@
 
     <application>
         <activity
-                android:name=".rn.SuperPlayerActivity"
+                android:name=".SuperPlayerActivity"
                 android:label="@string/title_activity_super_player"
                 android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
