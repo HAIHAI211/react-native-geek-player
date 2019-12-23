@@ -1,6 +1,12 @@
-
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.harrison.player">
+          package="com.tencent.liteav.demo.play">
+
+    <application>
+        <activity
+                android:name=".rn.SuperPlayerActivity"
+                android:label="@string/title_activity_super_player"
+                android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
 
 </manifest>
-  
