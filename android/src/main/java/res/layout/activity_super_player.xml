@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".rn.SuperPlayerActivity">
+    tools:context=".SuperPlayerActivity">
 
     <com.tencent.liteav.demo.play.SuperPlayerView
         android:id="@+id/super_player_view"
