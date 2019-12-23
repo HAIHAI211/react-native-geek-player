@@ -1,11 +1,20 @@
+//
+//  VideoPlayer.h
+//  GeekMathApp
+//
+//  Created by 甘瑞文 on 2019/8/23.
+//  Copyright © 2019 Facebook. All rights reserved.
+//
 
-#if __has_include("RCTBridgeModule.h")
-#import "RCTBridgeModule.h"
-#else
+#import <Foundation/Foundation.h>
 #import <React/RCTBridgeModule.h>
-#endif
 
-@interface RNPlayer : NSObject <RCTBridgeModule>
+NS_ASSUME_NONNULL_BEGIN
+
+@interface VideoPlayer : NSObject <RCTBridgeModule>
+
+- (void)play:(NSString *)fileId;
 
 @end
-  
+
+NS_ASSUME_NONNULL_END
