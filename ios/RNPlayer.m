@@ -34,8 +34,7 @@ RCT_EXPORT_METHOD(play:(NSString *)url) {
   self.playerVC.model = playerModel;
 
   dispatch_sync(dispatch_get_main_queue(), ^{
-    AppDelegate *appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
-    UIViewController *rootVC = appDelegate.window.rootViewController;
+    UIViewController *rootVC = [UIApplication sharedApplication].delegate.window.rootViewController;
     [rootVC presentViewController:self.playerVC animated:YES completion:nil];
   });
 }
