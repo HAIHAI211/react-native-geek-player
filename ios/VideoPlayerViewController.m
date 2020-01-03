@@ -48,6 +48,8 @@
   titleView.text = @"视频播放";
   titleView.font = [UIFont boldSystemFontOfSize:17];
   titleView.textAlignment = NSTextAlignmentCenter;
+  titleView.backgroundColor = [UIColor whiteColor];
+  titleView.textColor = [UIColor blackColor];
   if ([self isIPhoneXSeries]) {
     titleView.bounds = CGRectMake(0, 0, 150, 64 + 24);
     titleView.center = CGPointMake(ScreenWidth / 2, 60);
